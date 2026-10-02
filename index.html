@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheikh Neting Solutions | Invisible Grills, Mosquito & Bird Safety Nets in Mumbai, Navi Mumbai, Pune</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        netting: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            dark: '#05190f',
+                            accent: '#10b981', // Emerald safety green
+                            gold: '#f59e0b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS for safety netting theme -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #060d09;
+            color: #e2e8f0;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(5, 25, 15, 0.95) 0%, rgba(10, 37, 22, 0.92) 100%);
+        }
+        .glass-card {
+            background: rgba(15, 36, 24, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(34, 197, 94, 0.15);
+        }
+        .glass-card:hover {
+            border-color: rgba(34, 197, 94, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.2);
+        }
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        .animate-glow {
+            animation: pulse-glow 4s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-emerald-500 selection:text-slate-950">
+
+    <!-- Top Bar -->
+    <div class="bg-netting-900 border-b border-netting-800 text-xs sm:text-sm py-2 px-4 text-emerald-200">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span><i class="fas fa-map-marker-alt text-emerald-400 mr-2"></i> Mumbai | Navi Mumbai | Pune</span>
+                <span class="hidden md:inline"><i class="fas fa-shield-alt text-emerald-400 mr-2"></i> 100% Rust-Proof Stainless Steel Grills & High-Tensile Nets</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="tel:8107650714" class="hover:text-white transition"><i class="fas fa-phone-alt text-emerald-400 mr-1"></i> +91 8107650714</a>
+                <a href="https://instagram.com/shaikh_neting_solutions" target="_blank" class="hover:text-pink-400 transition"><i class="fab fa-instagram text-pink-400 mr-1"></i> @shaikh_neting_solutions</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-netting-dark/90 backdrop-blur-md border-b border-netting-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-600 to-netting-900 border border-emerald-500/40 flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition transform">
+                        <i class="fas fa-house-chimney-window text-xl text-emerald-300"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-black tracking-tight text-white block leading-tight">SHAIKH <span class="text-emerald-400 font-light">NETING SOLUTIONS</span></span>
+                        <span class="text-[10px] font-bold text-emerald-300/80 tracking-widest uppercase">Home Safety & Invisible Grills</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="font-medium text-white hover:text-emerald-400 transition">Home</a>
+                    <a href="#about" class="font-medium text-emerald-100/80 hover:text-emerald-400 transition">About</a>
+                    <a href="#services" class="font-medium text-emerald-100/80 hover:text-emerald-400 transition">Products & Services</a>
+                    <a href="#vsl" class="font-medium text-emerald-100/80 hover:text-emerald-400 transition">Video Showcase</a>
+                    <a href="#gallery" class="font-medium text-emerald-100/80 hover:text-emerald-400 transition">Projects</a>
+                    <a href="#reviews" class="font-medium text-emerald-100/80 hover:text-emerald-400 transition">Reviews</a>
+                    <a href="#faq" class="font-medium text-emerald-100/80 hover:text-emerald-400 transition">FAQ</a>
+                    <a href="#contact" class="font-medium text-emerald-100/80 hover:text-emerald-400 transition">Contact</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <button onclick="openQuoteModal()" class="bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-slate-950 px-5 py-2.5 rounded-xl font-bold shadow-lg hover:shadow-emerald-500/20 transition transform hover:-translate-y-0.5 flex items-center space-x-2 text-sm">
+                        <i class="fas fa-comment-dollar"></i>
+                        <span>Free Quote</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-netting-dark border-b border-netting-800 px-4 pt-3 pb-6 shadow-2xl">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="mobile-link px-3 py-2 rounded-lg font-medium text-emerald-100 hover:bg-netting-900">Home</a>
+                <a href="#about" class="mobile-link px-3 py-2 rounded-lg font-medium text-emerald-100 hover:bg-netting-900">About</a>
+                <a href="#services" class="mobile-link px-3 py-2 rounded-lg font-medium text-emerald-100 hover:bg-netting-900">Products & Services</a>
+                <a href="#vsl" class="mobile-link px-3 py-2 rounded-lg font-medium text-emerald-100 hover:bg-netting-900">Video Showcase</a>
+                <a href="#gallery" class="mobile-link px-3 py-2 rounded-lg font-medium text-emerald-100 hover:bg-netting-900">Projects</a>
+                <a href="#reviews" class="mobile-link px-3 py-2 rounded-lg font-medium text-emerald-100 hover:bg-netting-900">Reviews</a>
+                <a href="#faq" class="mobile-link px-3 py-2 rounded-lg font-medium text-emerald-100 hover:bg-netting-900">FAQ</a>
+                <a href="#contact" class="mobile-link px-3 py-2 rounded-lg font-medium text-emerald-100 hover:bg-netting-900">Contact</a>
+                <button onclick="openQuoteModal()" class="w-full bg-emerald-500 text-slate-950 py-3 rounded-xl font-bold shadow-lg mt-2">
+                    <i class="fas fa-comment-dollar mr-2"></i> Free Quote on WhatsApp
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center bg-netting-dark overflow-hidden py-20">
+        <!-- Background Image with Safety Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80" alt="Invisible Grills and Balcony Safety Nets" class="w-full h-full object-cover object-center opacity-25 animate-glow">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
+            <!-- Badge -->
+            <div class="inline-flex items-center space-x-2 bg-netting-900/90 border border-emerald-500/40 px-4 py-2 rounded-full mb-6 backdrop-blur-md">
+                <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="text-emerald-400 font-semibold text-xs sm:text-sm tracking-wide uppercase">🛡️ #1 Home Safety Net & Invisible Grill Experts</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 leading-tight">
+                Complete Home Safety Solutions <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-green-200 to-teal-300">Invisible Grills & Bird Nets</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-emerald-100/80 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                Welcome to <strong class="text-white font-semibold">Sheikh Neting Solutions</strong>. Serving Mumbai, Navi Mumbai, and Pune with premium invisible grills, balcony pigeon safety nets, anti-cat nets, and fiberglass mosquito nets.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16">
+                <a href="tel:8107650714" class="w-full sm:w-auto bg-gradient-to-r from-emerald-400 to-green-500 hover:from-emerald-300 hover:to-green-400 text-slate-950 px-8 py-4 rounded-2xl font-bold shadow-xl transition transform hover:-translate-y-1 flex items-center justify-center space-x-3 text-lg">
+                    <i class="fas fa-phone-alt animate-bounce"></i>
+                    <span>Call: +91 8107650714</span>
+                </a>
+                <a href="https://wa.me/918107650714?text=Hello%20Sheikh%20Neting%20Solutions,%20I%20want%20a%20free%20quote%20for%20safety%20nets%20/%20invisible%20grills." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-2xl font-bold shadow-xl transition transform hover:-translate-y-1 flex items-center justify-center space-x-3 text-lg">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span>WhatsApp Free Quote</span>
+                </a>
+                <button onclick="openQuoteModal()" class="w-full sm:w-auto bg-netting-900/80 hover:bg-netting-800 border border-emerald-600/50 text-white px-8 py-4 rounded-2xl font-bold backdrop-blur-md transition transform hover:-translate-y-1 flex items-center justify-center space-x-3 text-lg">
+                    <i class="fas fa-calculator"></i>
+                    <span>Book Site Visit</span>
+                </button>
+            </div>
+
+            <!-- Trust Grid / Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto pt-8 border-t border-netting-800">
+                <div class="glass-card p-5 rounded-2xl text-center">
+                    <div class="text-3xl font-extrabold text-emerald-400 mb-1">100%</div>
+                    <div class="text-xs text-emerald-200/70 font-medium uppercase tracking-wider">Rust-Proof SS Grills</div>
+                </div>
+                <div class="glass-card p-5 rounded-2xl text-center">
+                    <div class="text-3xl font-extrabold text-emerald-400 mb-1">Zero</div>
+                    <div class="text-xs text-emerald-200/70 font-medium uppercase tracking-wider">View Obstruction</div>
+                </div>
+                <div class="glass-card p-5 rounded-2xl text-center">
+                    <div class="text-3xl font-extrabold text-emerald-400 mb-1">Mumbai</div>
+                    <div class="text-xs text-emerald-200/70 font-medium uppercase tracking-wider">Navi Mumbai & Pune</div>
+                </div>
+                <div class="glass-card p-5 rounded-2xl text-center">
+                    <div class="text-3xl font-extrabold text-white mb-1">Expert</div>
+                    <div class="text-xs text-emerald-200/70 font-medium uppercase tracking-wider">Professional Installation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-netting-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3">About Sheikh Neting Solutions</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Protecting Homes With Advanced Safety Standards</h3>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-emerald-500/30 group">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Balcony invisible grill installation" class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-netting-dark via-transparent to-transparent flex flex-col justify-end p-8">
+                            <span class="text-emerald-400 font-bold text-sm">Trusted Residential & Commercial Service</span>
+                            <h4 class="text-2xl font-extrabold text-white">Secure Balconies Without Blocking Views</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block bg-netting-900 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full uppercase border border-emerald-700/50">
+                        Mumbai • Navi Mumbai • Pune
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white leading-snug">
+                        Your premier destination for invisible grills, pigeon safety nets, and mosquito mesh installation.
+                    </h3>
+                    <p class="text-emerald-100/80 leading-relaxed text-sm sm:text-base">
+                        Sheikh Neting Solutions is dedicated to safeguarding families, children, and pets without compromising the aesthetic beauty or fresh airflow of your home. Operating across Mumbai, Navi Mumbai, and Pune, we provide robust, high-tensile stainless steel invisible grills and UV-stabilized bird netting.
+                    </p>
+                    <p class="text-emerald-100/80 leading-relaxed text-sm sm:text-base">
+                        Our expert technicians ensure clean, drill-free or secure anchor installations with premium grade 316 stainless steel wire ropes that withstand extreme weather conditions.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="glass-card p-4 rounded-2xl">
+                            <div class="text-emerald-400 font-bold text-lg mb-1"><i class="fas fa-check-circle mr-2"></i>Child & Pet Safe</div>
+                            <p class="text-xs text-emerald-200/70">Prevents balcony falls & hazards</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-2xl">
+                            <div class="text-emerald-400 font-bold text-lg mb-1"><i class="fas fa-check-circle mr-2"></i>Pigeon Free</div>
+                            <p class="text-xs text-emerald-200/70">100% bird proofing guaranteed</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center space-x-4">
+                        <a href="tel:8107650714" class="bg-netting-900 hover:bg-emerald-950 text-white px-6 py-3.5 rounded-xl font-semibold shadow transition flex items-center space-x-2 border border-emerald-700/60">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Expert</span>
+                        </a>
+                        <a href="https://instagram.com/shaikh_neting_solutions" target="_blank" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3.5 rounded-xl font-semibold shadow transition flex items-center space-x-2">
+                            <i class="fab fa-instagram"></i>
+                            <span>@shaikh_neting_solutions</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / Services Section -->
+    <section id="services" class="py-24 bg-netting-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3">Our Core Offerings</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Professional Home Safety & Neting Services</h3>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-emerald-200/70 mt-4">Engineered for durability, aesthetic elegance, and absolute peace of mind.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-card rounded-3xl p-8 shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300 shadow-lg border border-emerald-800">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Invisible Grills</h4>
+                        <p class="text-emerald-100/70 text-sm leading-relaxed mb-6">
+                            High-tensile Grade 316 stainless steel wire invisible grills for balconies and windows. Provides unbreakable child safety without obstructing outdoor views or natural breeze.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal()" class="text-emerald-400 font-semibold text-sm flex items-center space-x-2 group-hover:translate-x-1 transition">
+                        <span>Get Free Quote</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-3xl p-8 shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300 shadow-lg border border-emerald-800">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Balcony Safety Nets</h4>
+                        <p class="text-emerald-100/70 text-sm leading-relaxed mb-6">
+                            Heavy-duty nylon safety netting designed specifically for high-rise apartment balconies. Protects children and pets from accidental falls securely and discreetly.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal()" class="text-emerald-400 font-semibold text-sm flex items-center space-x-2 group-hover:translate-x-1 transition">
+                        <span>Get Free Quote</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-3xl p-8 shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300 shadow-lg border border-emerald-800">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Mosquito Nets for Windows & Doors</h4>
+                        <p class="text-emerald-100/70 text-sm leading-relaxed mb-6">
+                            Fiberglass and stainless steel mesh mosquito nets with Velcro, sliding, or openable aluminum frames. Keep mosquitoes and insects out while letting fresh air in.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal()" class="text-emerald-400 font-semibold text-sm flex items-center space-x-2 group-hover:translate-x-1 transition">
+                        <span>Get Free Quote</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card rounded-3xl p-8 shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300 shadow-lg border border-emerald-800">
+                            <i class="fas fa-dove"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Pigeon & Bird Nets</h4>
+                        <p class="text-emerald-100/70 text-sm leading-relaxed mb-6">
+                            UV-stabilized polyethylene bird netting to prevent pigeons, crows, and sparrows from entering balconies, ducts, and AC units. 100% bird proofing without harming birds.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal()" class="text-emerald-400 font-semibold text-sm flex items-center space-x-2 group-hover:translate-x-1 transition">
+                        <span>Get Free Quote</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card rounded-3xl p-8 shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300 shadow-lg border border-emerald-800">
+                            <i class="fas fa-cat"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Anti-Cat Nets</h4>
+                        <p class="text-emerald-100/70 text-sm leading-relaxed mb-65">
+                            Extra-strong reinforced pet safety netting designed to prevent cats from jumping or falling off balconies and high windows while allowing them to enjoy the outdoors safely.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal()" class="text-emerald-400 font-semibold text-sm flex items-center space-x-2 group-hover:translate-x-1 transition">
+                        <span>Get Free Quote</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card rounded-3xl p-8 shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300 shadow-lg border border-emerald-800">
+                            <i class="fas fa-baseball"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Cricket Practice & Sports Nets</h4>
+                        <p class="text-emerald-100/70 text-sm leading-relaxed mb-6">
+                            Heavy-duty knotted and knotless sports practice nets for cricket turfs, schools, academies, and residential society sports grounds across Mumbai and Pune.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal()" class="text-emerald-400 font-semibold text-sm flex items-center space-x-2 group-hover:translate-x-1 transition">
+                        <span>Get Free Quote</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VSL / Video Showcase Section -->
+    <section id="vsl" class="py-24 bg-netting-900/50 relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-15">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f1f5d?auto=format&fit=crop&w=1920&q=80" alt="Safety net installation background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3">Installation Work in Action</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Invisible Grills & Safety Nets Video Reel</h3>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-emerald-200/70 mt-4">Watch our professional installation reels showcasing invisible grills and bird netting across high-rise apartments.</p>
+            </div>
+
+            <!-- Video Player Mock Card -->
+            <div class="max-w-4xl mx-auto glass-card rounded-3xl overflow-hidden shadow-2xl border border-emerald-500/30">
+                <div class="relative aspect-video bg-netting-dark flex items-center justify-center group cursor-pointer" onclick="openVideoModal()">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Video preview" class="w-full h-full object-cover opacity-60 group-hover:opacity-75 transition duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <div class="absolute w-20 h-20 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center shadow-2xl group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-play text-2xl ml-1"></i>
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="bg-emerald-500 text-slate-950 text-xs px-3 py-1 rounded-full font-bold mb-2 inline-block">Instagram Reel Feature</span>
+                        <h4 class="text-xl font-bold text-white">Invisible Grill & Pigeon Net Installation by @shaikh_neting_solutions</h4>
+                    </div>
+                </div>
+                <div class="p-6 bg-netting-900/90 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="text-sm text-emerald-200">
+                        <i class="fab fa-instagram text-pink-400 mr-2 text-lg"></i> Watch all installation reels on Instagram: <strong class="text-white">@shaikh_neting_solutions</strong>
+                    </div>
+                    <a href="https://instagram.com/shaikh_neting_solutions" target="_blank" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition flex items-center space-x-2">
+                        <i class="fab fa-instagram"></i>
+                        <span>View Instagram Reels</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Gallery Section -->
+    <section id="gallery" class="py-24 bg-netting-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3">Our Project Portfolio</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Recent Safety Installations</h3>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-emerald-200/70 mt-4">Explore our work across balconies, windows, and commercial buildings.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterGallery('all')" class="gallery-btn active-filter px-5 py-2 rounded-xl text-sm font-semibold bg-emerald-500 text-slate-950 transition shadow">All Projects</button>
+                <button onclick="filterGallery('balcony')" class="gallery-btn px-5 py-2 rounded-xl text-sm font-semibold bg-netting-900 text-emerald-200 hover:bg-emerald-800 hover:text-white transition border border-emerald-800">Balcony Invisible Grills</button>
+                <button onclick="filterGallery('windows')" class="gallery-btn px-5 py-2 rounded-xl text-sm font-semibold bg-netting-900 text-emerald-200 hover:bg-emerald-800 hover:text-white transition border border-emerald-800">Windows & Mosquito Nets</button>
+                <button onclick="filterGallery('commercial')" class="gallery-btn px-5 py-2 rounded-xl text-sm font-semibold bg-netting-900 text-emerald-200 hover:bg-emerald-800 hover:text-white transition border border-emerald-800">Bird & Pigeon Netting</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item balcony relative rounded-2xl overflow-hidden shadow-xl group h-80 border border-emerald-800/60">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Balcony invisible grill" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase">Balcony</span>
+                        <p class="text-white font-bold text-lg">SS Invisible Grill in High-Rise</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item commercial relative rounded-2xl overflow-hidden shadow-xl group h-80 border border-emerald-800/60">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Bird netting" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase">Commercial & Residential</span>
+                        <p class="text-white font-bold text-lg">Pigeon Anti-Bird Netting</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item windows relative rounded-2xl overflow-hidden shadow-xl group h-80 border border-emerald-800/60">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Mosquito net window" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase">Windows</span>
+                        <p class="text-white font-bold text-lg">Sliding Mosquito Mesh Frame</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item balcony relative rounded-2xl overflow-hidden shadow-xl group h-80 border border-emerald-800/60">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f1f5d?auto=format&fit=crop&w=800&q=80" alt="Child safety net" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase">Balcony</span>
+                        <p class="text-white font-bold text-lg">Heavy-Duty Child Safety Net</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item commercial relative rounded-2xl overflow-hidden shadow-xl group h-80 border border-emerald-800/60">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt="Anti-cat net" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase">Commercial & Residential</span>
+                        <p class="text-white font-bold text-lg">Reinforced Anti-Cat Netting</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item windows relative rounded-2xl overflow-hidden shadow-xl group h-80 border border-emerald-800/60">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Invisible grill window" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-xs font-bold text-emerald-400 uppercase">Windows</span>
+                        <p class="text-white font-bold text-lg">Window Safety Invisible Grills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-netting-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3">Client Feedback</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">What Homeowners Say About Us</h3>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="glass-card p-8 rounded-3xl shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-emerald-100/80 text-sm leading-relaxed italic mb-6">
+                            "Sheikh Neting Solutions installed invisible grills in our 18th-floor apartment in Mumbai. The view is completely clear and my kids are safe. Very professional team!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-netting-800">
+                        <div class="w-12 h-12 rounded-full bg-netting-900 text-emerald-400 font-bold flex items-center justify-center border border-emerald-700">
+                            AS
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white text-sm">Amit Shah</h5>
+                            <p class="text-xs text-emerald-200/60">Resident, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-8 rounded-3xl shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-emerald-100/80 text-sm leading-relaxed italic mb-6">
+                            "We had serious pigeon issues on our Navi Mumbai balcony. They installed anti-bird netting cleanly and quickly. Not a single pigeon enters now. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-netting-800">
+                        <div class="w-12 h-12 rounded-full bg-netting-900 text-emerald-400 font-bold flex items-center justify-center border border-emerald-700">
+                            PN
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white text-sm">Pooja Nair</h5>
+                            <p class="text-xs text-emerald-200/60">Resident, Navi Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-8 rounded-3xl shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-emerald-100/80 text-sm leading-relaxed italic mb-6">
+                            "Prompt service, transparent pricing, and polite technicians in Pune. Installed mosquito nets across all windows without any mess. Excellent quality."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-netting-800">
+                        <div class="w-12 h-12 rounded-full bg-netting-900 text-emerald-400 font-bold flex items-center justify-center border border-emerald-700">
+                            RK
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white text-sm">Rahul Kulkarni</h5>
+                            <p class="text-xs text-emerald-200/60">Resident, Pune</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-netting-dark">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3">Got Questions?</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Frequently Asked Questions</h3>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left font-bold text-white hover:bg-netting-900/50 transition">
+                        <span>Are invisible grills strong enough to prevent children from falling?</span>
+                        <i class="fas fa-chevron-down text-emerald-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-emerald-100/80 text-sm leading-relaxed">
+                        Yes! Our invisible grills are made of high-tensile Grade 316 stainless steel wire ropes that can withstand loads of 150+ kg, making them exceptionally safe for children and pets.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left font-bold text-white hover:bg-netting-900/50 transition">
+                        <span>Do bird nets block sunlight and fresh air on the balcony?</span>
+                        <i class="fas fa-chevron-down text-emerald-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-emerald-100/80 text-sm leading-relaxed">
+                        Not at all. Our specialized polyethylene bird nets are virtually invisible from a short distance and allow 99% light and airflow while keeping pigeons completely out.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left font-bold text-white hover:bg-netting-900/50 transition">
+                        <span>Which areas do you provide installation services in?</span>
+                        <i class="fas fa-chevron-down text-emerald-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-emerald-100/80 text-sm leading-relaxed">
+                        We provide prompt on-site survey and installation services across Mumbai, Navi Mumbai, and Pune.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left font-bold text-white hover:bg-netting-900/50 transition">
+                        <span>How can I book a site visit or get an estimate?</span>
+                        <i class="fas fa-chevron-down text-emerald-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-emerald-100/80 text-sm leading-relaxed">
+                        You can call us directly at <strong>+91 8107650714</strong> or message us on WhatsApp with your balcony or window dimensions for an instant free estimate.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Location Section -->
+    <section id="location" class="py-24 bg-netting-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3">Service Areas</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Serving Mumbai, Navi Mumbai & Pune</h3>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5 glass-card p-8 rounded-3xl shadow-xl space-y-6">
+                    <h4 class="text-2xl font-bold text-white">Sheikh Neting Solutions Hub</h4>
+                    <div class="space-y-4 text-emerald-100/80">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-emerald-400 text-xl mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Primary Regions:</strong>
+                                Mumbai, Navi Mumbai, Pune & Suburbs
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-emerald-400 text-lg"></i>
+                            <div>
+                                <strong class="text-white block">Mobile Number:</strong>
+                                <a href="tel:8107650714" class="text-emerald-400 font-bold hover:underline">+91 8107650714</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fab fa-instagram text-pink-400 text-lg"></i>
+                            <div>
+                                <strong class="text-white block">Instagram Handle:</strong>
+                                <a href="https://instagram.com/shaikh_neting_solutions" target="_blank" class="text-pink-400 font-bold hover:underline">@shaikh_neting_solutions</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/918107650714?text=Hello%20Sheikh%20Neting%20Solutions,%20I%20would%20like%20to%20schedule%20a%20site%20visit." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 rounded-xl font-semibold shadow flex items-center justify-center space-x-2 transition">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Book Site Visit on WhatsApp</span>
+                    </a>
+                </div>
+
+                <div class="lg:col-span-7 h-[420px] rounded-3xl overflow-hidden shadow-2xl border border-emerald-500/30">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160982327!2d72.74109984711317!3d19.082197839552174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-netting-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3">Get in Touch</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Book Your Safety Net Installation Today</h3>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="glass-card p-8 rounded-3xl shadow-xl space-y-6">
+                        <h4 class="text-2xl font-bold text-white">Direct Contacts</h4>
+                        <p class="text-emerald-100/80 text-sm">Reach out to us instantly for pricing, balcony measurements, or emergency installations.</p>
+                        
+                        <div class="space-y-4 pt-4 border-t border-netting-800">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-xl shrink-0 border border-emerald-800">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-emerald-200/60 block">Call Anytime</span>
+                                    <a href="tel:8107650714" class="text-lg font-bold text-white hover:text-emerald-400 transition">+91 8107650714</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-xl shrink-0 border border-emerald-800">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-emerald-200/60 block">WhatsApp Chat</span>
+                                    <a href="https://wa.me/918107650714" target="_blank" class="text-lg font-bold text-white hover:text-emerald-400 transition">+91 8107650714</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-2xl bg-netting-900 text-pink-400 flex items-center justify-center text-xl shrink-0 border border-emerald-800">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-emerald-200/60 block">Instagram</span>
+                                    <a href="https://instagram.com/shaikh_neting_solutions" target="_blank" class="text-lg font-bold text-white hover:text-pink-400 transition">@shaikh_neting_solutions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 glass-card p-8 rounded-3xl shadow-xl">
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-emerald-200 mb-2">Your Full Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl border border-emerald-800 bg-netting-900 text-white focus:ring-2 focus:ring-emerald-400 focus:outline-none" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-emerald-200 mb-2">Mobile Number</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-emerald-800 bg-netting-900 text-white focus:ring-2 focus:ring-emerald-400 focus:outline-none" placeholder="+91 XXXXX XXXXX">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-emerald-200 mb-2">Service Required</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-emerald-800 bg-netting-900 text-white focus:ring-2 focus:ring-emerald-400 focus:outline-none">
+                                <option>Invisible Grills</option>
+                                <option>Balcony Safety Nets</option>
+                                <option>Mosquito Nets for Windows/Doors</option>
+                                <option>Pigeon & Bird Nets</option>
+                                <option>Anti-Cat Nets</option>
+                                <option>Cricket Practice & Sports Nets</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-emerald-200 mb-2">Project Details / City (Mumbai, Navi Mumbai, Pune)</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-emerald-800 bg-netting-900 text-white focus:ring-2 focus:ring-emerald-400 focus:outline-none" placeholder="Tell us about your balcony size or requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-emerald-400 to-green-500 hover:from-emerald-300 hover:to-green-400 text-slate-950 py-4 rounded-xl font-bold shadow-lg transition transform hover:-translate-y-0.5">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-emerald-200/70 py-16 border-t border-netting-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-netting-900 flex items-center justify-center text-emerald-400 border border-emerald-800">
+                            <i class="fas fa-house-chimney-window"></i>
+                        </div>
+                        <span class="text-xl font-extrabold text-white">SHAIKH NETING SOLUTIONS</span>
+                    </div>
+                    <p class="text-sm text-emerald-200/70">
+                        Professional invisible grills, balcony safety nets, pigeon netting, and mosquito meshes across Mumbai, Navi Mumbai, and Pune.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-emerald-400 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-emerald-400 transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition">Products & Services</a></li>
+                        <li><a href="#vsl" class="hover:text-emerald-400 transition">Video Showcase</a></li>
+                        <li><a href="#gallery" class="hover:text-emerald-400 transition">Projects Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Our Services</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><span class="text-emerald-100">Invisible Grills</span></li>
+                        <li><span class="text-emerald-100">Balcony Safety Nets</span></li>
+                        <li><span class="text-emerald-100">Mosquito Nets</span></li>
+                        <li><span class="text-emerald-100">Pigeon & Bird Nets</span></li>
+                        <li><span class="text-emerald-100">Anti-Cat Nets</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Connect With Us</h5>
+                    <p class="text-sm mb-3"><i class="fas fa-phone-alt text-emerald-400 mr-2"></i> +91 8107650714</p>
+                    <p class="text-sm mb-3"><i class="fas fa-map-marker-alt text-emerald-400 mr-2"></i> Mumbai, Navi Mumbai, Pune</p>
+                    <div class="flex space-x-4 pt-2">
+                        <a href="https://instagram.com/shaikh_neting_solutions" target="_blank" class="w-10 h-10 rounded-full bg-netting-900 text-pink-400 hover:bg-pink-600 hover:text-white flex items-center justify-center transition shadow border border-emerald-800">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/918107650714" target="_blank" class="w-10 h-10 rounded-full bg-netting-900 text-emerald-400 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition shadow border border-emerald-800">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:8107650714" class="w-10 h-10 rounded-full bg-netting-900 text-emerald-400 hover:bg-emerald-400 hover:text-slate-950 flex items-center justify-center transition shadow border border-emerald-800">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-netting-900 flex flex-col sm:flex-row justify-between items-center text-xs text-emerald-200/50 gap-4">
+                <p>&copy; 2026 Sheikh Neting Solutions. All rights reserved.</p>
+                <p class="font-medium text-emerald-300">Designed by Marwar Infotech</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call & WhatsApp Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <a href="https://wa.me/918107650714?text=Hello%20Sheikh%20Neting%20Solutions,%20I%20would%20like%20a%20free%20quote%20for%20safety%20nets%20or%20invisible%20grills." target="_blank" class="w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110 text-2xl border border-emerald-400" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:8107650714" class="w-14 h-14 bg-green-500 hover:bg-green-600 text-slate-950 rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110 text-xl font-bold border border-green-300" title="Call +91 8107650714">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Quote / Estimate Modal -->
+    <div id="quote-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-card rounded-3xl max-w-lg w-full p-8 shadow-2xl relative border border-emerald-500/30">
+            <button onclick="closeQuoteModal()" class="absolute top-6 right-6 text-emerald-200 hover:text-white text-xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-netting-900 text-emerald-400 flex items-center justify-center text-xl mx-auto mb-3 border border-emerald-800">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white">Get Free Quote</h3>
+                <p class="text-xs text-emerald-200/70 mt-1">Sheikh Neting Solutions • Mumbai, Navi Mumbai, Pune</p>
+            </div>
+
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-emerald-200 mb-1">Full Name</label>
+                    <input type="text" required class="w-full px-4 py-2.5 rounded-xl border border-emerald-800 bg-netting-900 text-white text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" placeholder="Your name">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-emerald-200 mb-1">Mobile Number</label>
+                    <input type="tel" required class="w-full px-4 py-2.5 rounded-xl border border-emerald-800 bg-netting-900 text-white text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" placeholder="Mobile number">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-emerald-200 mb-1">Service Required</label>
+                    <select class="w-full px-4 py-2.5 rounded-xl border border-emerald-800 bg-netting-900 text-white text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none">
+                        <option>Invisible Grills</option>
+                        <option>Balcony Safety Nets</option>
+                        <option>Mosquito Nets for Windows/Doors</option>
+                        <option>Pigeon & Bird Nets</option>
+                        <option>Anti-Cat Nets</option>
+                        <option>Cricket Practice & Sports Nets</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-emerald-200 mb-1">City / Location</label>
+                    <input type="text" required class="w-full px-4 py-2.5 rounded-xl border border-emerald-800 bg-netting-900 text-white text-sm focus:ring-2 focus:ring-emerald-400 focus:outline-none" placeholder="e.g. Mumbai, Navi Mumbai, Pune">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-emerald-400 to-green-500 hover:from-emerald-300 hover:to-green-400 text-slate-950 py-3 rounded-xl font-bold text-sm shadow transition">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="max-w-3xl w-full relative">
+            <button onclick="closeVideoModal()" class="absolute -top-12 right-0 text-white text-2xl hover:text-emerald-400">
+                <i class="fas fa-times"></i> Close
+            </button>
+            <div class="aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border border-emerald-500/30 flex items-center justify-center">
+                <div class="text-center p-8">
+                    <i class="fab fa-instagram text-pink-500 text-5xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-white mb-2">Watch on Instagram @shaikh_neting_solutions</h4>
+                    <p class="text-emerald-100/70 text-sm mb-6">Explore our live installation reels and safety net videos directly on Instagram.</p>
+                    <a href="https://instagram.com/shaikh_neting_solutions" target="_blank" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-bold text-sm inline-flex items-center space-x-2">
+                        <i class="fab fa-instagram"></i>
+                        <span>Open Instagram Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message Modal -->
+    <div id="success-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-card rounded-3xl max-w-sm w-full p-8 text-center shadow-2xl border border-emerald-500/30">
+            <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4 border border-emerald-500/40">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Inquiry Received!</h3>
+            <p class="text-xs text-emerald-100/80 mb-6">Thank you for contacting Sheikh Neting Solutions. Our safety experts will call you shortly at +91 8107650714.</p>
+            <button onclick="closeSuccessModal()" class="w-full bg-emerald-500 text-slate-950 py-3 rounded-xl font-bold text-sm">OK</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Gallery Filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-emerald-500', 'text-slate-950');
+                btn.classList.add('bg-netting-900', 'text-emerald-200');
+            });
+
+            event.target.classList.remove('bg-netting-900', 'text-emerald-200');
+            event.target.classList.add('bg-emerald-500', 'text-slate-950');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Modals
+        function openQuoteModal() {
+            document.getElementById('quote-modal').classList.remove('hidden');
+        }
+
+        function closeQuoteModal() {
+            document.getElementById('quote-modal').classList.add('hidden');
+        }
+
+        function openVideoModal() {
+            document.getElementById('video-modal').classList.remove('hidden');
+        }
+
+        function closeVideoModal() {
+            document.getElementById('video-modal').classList.add('hidden');
+        }
+
+        function handleModalSubmit(event) {
+            event.preventDefault();
+            closeQuoteModal();
+            document.getElementById('success-modal').classList.remove('hidden');
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('success-modal').classList.remove('hidden');
+            event.target.reset();
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
